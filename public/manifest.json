@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Auction Scraper",
+  "name": "Simple tool to scrape an auction site",
   "icons": [
     {
       "src": "favicon.ico",
