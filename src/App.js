@@ -6,10 +6,8 @@ import socketIOClient from "socket.io-client";
 import { jsx, css, Global } from "@emotion/core";
 import normalize from "normalize.css";
 import { format } from "date-fns";
-import ImageList from "./ImageList";
 import { ReactComponent as Loader } from "./icons/spinner.svg";
 
-import facepaint from "facepaint";
 
 const breakpoints = [576, 768, 992, 1200];
 
@@ -18,7 +16,7 @@ const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
 require("typeface-ibm-plex-sans");
 
 function App() {
-  const endPoint = "http://127.0.0.1:4001";
+  const endPoint = "https://auction-scraper-api.herokuapp.com/";
   const [data, setData] = useState(false);
   const [keyWord, setKeyWord] = useState("");
   const [loading, setLoading] = useState(false);
